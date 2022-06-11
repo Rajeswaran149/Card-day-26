@@ -1,8 +1,7 @@
-import logo from './logo.svg';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-import Card from './card';
-
-
+import { useState } from 'react';
+import Card from './Card.js'
 
 const data = [
   {
@@ -130,14 +129,20 @@ const data = [
 
 ]
 
+
 function App() {
+ 
+
+
+
   return (
-    <section class="pricing py-5">
-      <div class="container">
-        <div class="row">
+
+    <section className="pricing py-5">
+      <div className="container">
+        <div className="row">
           {data.map((card) => {
             return (
-              <Card data={card} name={card.name}/>
+              <Card data={card} />
             )
           })}
         </div>
