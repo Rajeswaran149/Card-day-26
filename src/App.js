@@ -1,7 +1,7 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import { useState } from 'react';
-import Card from './Card.js'
+import Card from './card.js'
 
 const data = [
   {
